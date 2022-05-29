@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\MedicoControllerController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +23,4 @@ Route::get('/medico', function () {
     return view('medico');
 });
 
-Route::resources('/medico', 'MedicoController');
+Route::resource('/medico', UserController::class);

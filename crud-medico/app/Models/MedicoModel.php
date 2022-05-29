@@ -17,15 +17,10 @@ class MedicoModel extends Authenticatable
         'crm',
         'telefone',
         'especialidade',
-        'senha',
     ];
 
     protected $hidden = [
-        'password',
+        'senha',
         'remember_token',
-    ];
-
-    protected $casts = [
-        'email_verified_at' => 'datetime',
     ];
 }
