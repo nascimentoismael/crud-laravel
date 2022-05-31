@@ -23,4 +23,4 @@ Route::get('/medico', function () {
     return view('medico');
 });
 
-Route::resource('/medico', UserController::class);
+Route::resource('medicos',MedicoController::class);
